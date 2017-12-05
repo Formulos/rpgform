@@ -4,27 +4,29 @@ import SideBar from '../components/SideBar.js';
 
 export default class Group extends React.Component {
 
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {
+        this.state = {
 
-    };
-  }
+        };
+
+    }
 
 
-  render() {
-    return (
+    render() {
+        return (
             <div>
+            {console.log(this.props)}
                 <SideBar
-                  groupId = {this.props.groupId}
+                    groupId = {this.props.group._id}
                 />
             </div>
-    );
-  }
+        );
+    }
 }
 
 
 Group.propTypes = {
-  groupId: React.PropTypes.string,
+
 };
