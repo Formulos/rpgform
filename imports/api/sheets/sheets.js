@@ -22,20 +22,18 @@ export const sheetSchema = new SimpleSchema({
     type: String,
     optional: true,
   },
-  type: {
+  type: { // NPC, Player, MC
     type: String,
-    //colocor optional values
   },
   group_id: {
     type: String,
   },
-  player_name: {
+  player_name: { // Name for the sheet owner (null for NPC or MC)
     type: String,
   },
   char_name: {
     type: String,
   },
-
 });
 
 export const removeSchema = new SimpleSchema({
